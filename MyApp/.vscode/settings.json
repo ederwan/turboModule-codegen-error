@@ -1,0 +1,75 @@
+{
+  "gitmoji.outputType": "code",
+  "search.exclude": {
+    "**/.cache": true,
+    "**/dist*": true,
+    "**/build*": true
+  },
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "files.associations": {
+    "Makefile*": "makefile"
+  },
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "logFileHighlighter.customPatterns": [
+    {
+      "pattern": "\\d+/\\w+/\\d+:\\d+:\\d+:\\d+[^\\]]+",
+      "foreground": "#ac9",
+      "background": "#221"
+    },
+    {
+      "pattern": "GET",
+      "foreground": "#0d0",
+      "background": "#030"
+    },
+    {
+      "pattern": "POST",
+      "foreground": "#f70",
+      "background": "#320"
+    },
+    {
+      "pattern": "\\s/[^\\s]+",
+      "foreground": "#ccf"
+    },
+    {
+      "pattern": "Scope: [^\\]]+",
+      "foreground": "#e50",
+      "background": "#210"
+    }
+  ],
+  "logViewer.options": {
+    "fileListInterval": 30000,
+    "followTailMode": "auto"
+  },
+  "logViewer.showStatusBarItemOnChange": true,
+  "logViewer.watch": [
+    {
+      "groupName": "Local env",
+      "watches": [
+        {
+          "title": "[All logs]",
+          "pattern": "logs/**/*.log"
+        },
+        {
+          "title": "Traefik",
+          "pattern": "logs/traefik/*.log"
+        },
+        {
+          "title": "GraphQL",
+          "pattern": "logs/graphql/*.log"
+        },
+        {
+          "title": "Stubby",
+          "pattern": "logs/stubby/*.log"
+        },
+        {
+          "title": "Web",
+          "pattern": "logs/web/*.log"
+        }
+      ]
+    }
+  ]
+}
